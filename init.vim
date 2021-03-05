@@ -1,4 +1,5 @@
 syntax on
+set encoding=utf-8
 
 call plug#begin()
 	Plug 'morhetz/gruvbox'
@@ -8,6 +9,8 @@ call plug#begin()
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
+set noswapfile
+set number
 set relativenumber
 set noerrorbells
 set tabstop=4 softtabstop=4
@@ -19,8 +22,8 @@ set nowrap
 set incsearch
 set undofile
 
-set colorcolumn=80
-highlight ColorColumn ctermbg=0 guibg=lightgrey
+" set colorcolumn=80
+" highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 colo gruvbox
 set background=dark
