@@ -1,5 +1,4 @@
 syntax on
-set encoding=utf-8
 
 call plug#begin()
 	Plug 'morhetz/gruvbox'
@@ -7,6 +6,7 @@ call plug#begin()
     Plug 'vim-airline/vim-airline-themes'
     Plug 'scrooloose/nerdtree'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 set noswapfile
@@ -21,6 +21,9 @@ set smartindent
 set nowrap
 set incsearch
 set undofile
+set encoding=utf-8
+set spelllang=en
+set spell
 
 " set colorcolumn=80
 " highlight ColorColumn ctermbg=0 guibg=lightgrey
